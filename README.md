@@ -42,6 +42,14 @@ The first time you create a new project, run the Ruby bundler to install CocoaPo
 bundle install
 ```
 
+If you use Ruby 4.x and see Bundler/CocoaPods errors, reset local gems and reinstall with a modern Bundler:
+
+```sh
+gem install bundler -v 2.6.9
+rm -rf vendor/bundle
+bundle _2.6.9_ install
+```
+
 Then, and every time you update your native dependencies, run:
 
 ```sh
